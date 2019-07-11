@@ -24,11 +24,6 @@ class Telefone{
    */
   private $aluno;
 
-  public function __construct()
-  {
-    $this->telefones = new ArrayCollection();
-  }
-
   public function getId(): int
     {
         return $this->id;
@@ -59,20 +54,9 @@ class Telefone{
       return $this->aluno;
   }
 
-  public function setAluno(string $aluno): self
+  public function setAluno(Aluno $aluno): self
   {
       $this->aluno = $aluno;
       return $this;
   }
-
-    public function addTelefone(Telefone $telefone)
-    {
-      $this->telefones->add($telefone);
-    }
-
-    public function getTelefones(): Colection
-    {
-      return $this->telefones;
-    }
-
 }
