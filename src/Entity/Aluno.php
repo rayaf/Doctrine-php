@@ -19,6 +19,11 @@ class Aluno{
    */
   private $nome;
 
+  /**
+   * @OneToMany(targetEntity=Telefone, mappedBy="aluno)
+   */
+  private $telefones;
+
   public function getId(): int
   {
       return $this->id;
