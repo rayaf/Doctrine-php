@@ -19,10 +19,10 @@ class Aluno{
    */
   private $nome;
 
-  /**
-   * @OneToMany(targetEntity=Telefone, mappedBy="aluno)
-   */
-  private $telefones;
+	/**
+	 * @OneToMany(targetEntity="Telefone", mappedBy="Aluno")
+	 */
+	private $telefones;
 
   public function getId(): int
   {
